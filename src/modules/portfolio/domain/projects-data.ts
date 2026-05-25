@@ -69,7 +69,7 @@ export const projectsData: Project[] = [
             TECH.testinglibrary,
             TECH.pnpm,
         ],
-        demoUrl: '/',
+        demoUrl: 'https://everget.github.io/my-portfolio-website/',
         repoUrl: 'https://github.com/everget/my-portfolio-website',
     },
     {

@@ -81,6 +81,10 @@
 - The localStorage preferences key is `vite-react:preferences`.
 - Do not use conditional `expect()` calls - restructure the test to make assertions unconditional.
 
+## Build output
+
+- It is **prohibited** to add the `dist/` folder to `.gitignore`. The build output must remain trackable so the deploy pipeline and local previews work correctly.
+
 ## CI pipeline
 
 - Job order: `check` -> `unit-test` -> `e2e` -> `deploy`.

@@ -22,7 +22,7 @@ pre-commit:
 
         - name: lint:styles
           glob: '*.{css,scss,sass,less,styl}'
-          run: pnpm exec stylelint --cache --fix {staged_files}
+          run: pnpm exec stylelint --cache --fix --allow-empty-input {staged_files}
           stage_fixed: true
 
         - name: format
@@ -41,17 +41,17 @@ commit-msg:
 # pre-push: full repo check + tests for files reachable from staged changes.
 # Skipped when the working tree is dirty (matches the husky behavior).
 # ---------------------------------------------------------------------------
-pre-push:
-    jobs:
-        - name: check
-          run: pnpm run check
-          skip:
-              - run: git diff HEAD --quiet; test $? -ne 0
+# pre-push:
+#     jobs:
+#         - name: check
+#           run: pnpm run check
+#           skip:
+#               - run: git diff HEAD --quiet; test $? -ne 0
 
-        - name: test:related
-          run: pnpm run test:related
-          skip:
-              - run: git diff HEAD --quiet; test $? -ne 0
+#         - name: test:related
+#           run: pnpm run test:related
+#           skip:
+#               - run: git diff HEAD --quiet; test $? -ne 0
 
 # ---------------------------------------------------------------------------
 # post-checkout / post-merge / post-rebase: auto-reinstall deps if the
