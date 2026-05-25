@@ -1,4 +1,5 @@
 import { useT } from '@/modules/shared/i18n/i18n-context';
+import { publicAssetUrl } from '@/modules/shared/lib/utils';
 
 export function Hero() {
     const t = useT();
@@ -30,7 +31,7 @@ export function Hero() {
                         className="hover:bg-muted inline-flex h-14 w-14 items-center justify-center rounded-xl border border-border transition-colors"
                     >
                         <img
-                            src="/skill-icons/gmail.svg"
+                            src={publicAssetUrl('/skill-icons/gmail.svg')}
                             alt=""
                             aria-hidden="true"
                             className="h-7 w-7"
@@ -46,7 +47,7 @@ export function Hero() {
                         className="hover:bg-muted inline-flex h-14 w-14 items-center justify-center rounded-xl border border-border transition-colors"
                     >
                         <img
-                            src="/skill-icons/github.svg"
+                            src={publicAssetUrl('/skill-icons/github.svg')}
                             alt=""
                             aria-hidden="true"
                             className="h-7 w-7 dark:invert"
@@ -62,7 +63,7 @@ export function Hero() {
                         className="hover:bg-muted inline-flex h-14 w-14 items-center justify-center rounded-xl border border-border transition-colors"
                     >
                         <img
-                            src="/skill-icons/linkedin.svg"
+                            src={publicAssetUrl('/skill-icons/linkedin.svg')}
                             alt=""
                             aria-hidden="true"
                             className="h-7 w-7"

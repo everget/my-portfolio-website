@@ -1,4 +1,5 @@
 import type { TranslationKey } from '@/modules/shared/i18n/translator';
+import { publicAssetUrl } from '@/modules/shared/lib/utils';
 import { iconUrls } from './icon-urls';
 
 export interface ProjectTechItem {
@@ -51,7 +52,7 @@ export const projectsData: Project[] = [
         id: 'portfolioWebsite',
         titleKey: 'portfolio.projects.items.portfolioWebsite.title',
         descriptionKey: 'portfolio.projects.items.portfolioWebsite.description',
-        image: '/projects/my-portfolio.png',
+        image: publicAssetUrl('/projects/my-portfolio.png'),
         techstack: [
             TECH.claudecode,
             TECH.cursor,
@@ -76,7 +77,7 @@ export const projectsData: Project[] = [
         id: 'pineScriptCheatsheet',
         titleKey: 'portfolio.projects.items.pineScriptCheatsheet.title',
         descriptionKey: 'portfolio.projects.items.pineScriptCheatsheet.description',
-        image: '/projects/pinescript-cheatsheet.png',
+        image: publicAssetUrl('/projects/pinescript-cheatsheet.png'),
         techstack: [
             TECH.claudecode,
             TECH.cursor,
@@ -101,7 +102,7 @@ export const projectsData: Project[] = [
         id: 'calculator',
         titleKey: 'portfolio.projects.items.calculator.title',
         descriptionKey: 'portfolio.projects.items.calculator.description',
-        image: '/projects/calculator.png',
+        image: publicAssetUrl('/projects/calculator.png'),
         techstack: [
             TECH.claudecode,
             TECH.cursor,
@@ -123,7 +124,7 @@ export const projectsData: Project[] = [
         id: 'todoList',
         titleKey: 'portfolio.projects.items.todoList.title',
         descriptionKey: 'portfolio.projects.items.todoList.description',
-        image: '/projects/todolist.png',
+        image: publicAssetUrl('/projects/todolist.png'),
         techstack: [
             TECH.claudecode,
             TECH.cursor,
@@ -149,7 +150,7 @@ export const projectsData: Project[] = [
         id: 'spaceInvaders',
         titleKey: 'portfolio.projects.items.spaceInvaders.title',
         descriptionKey: 'portfolio.projects.items.spaceInvaders.description',
-        image: '/projects/space-invaders.webp',
+        image: publicAssetUrl('/projects/space-invaders.webp'),
         techstack: [
             TECH.html5,
             TECH.css3,
@@ -168,7 +169,7 @@ export const projectsData: Project[] = [
         id: 'securitiesPortfolio',
         titleKey: 'portfolio.projects.items.securitiesPortfolio.title',
         descriptionKey: 'portfolio.projects.items.securitiesPortfolio.description',
-        image: '/projects/securities-portfolio-calculator.webp',
+        image: publicAssetUrl('/projects/securities-portfolio-calculator.webp'),
         techstack: [
             TECH.html5,
             TECH.css3,
@@ -187,7 +188,7 @@ export const projectsData: Project[] = [
         id: 'simpleBookStorage',
         titleKey: 'portfolio.projects.items.simpleBookStorage.title',
         descriptionKey: 'portfolio.projects.items.simpleBookStorage.description',
-        image: '/projects/simple-book-storage.png',
+        image: publicAssetUrl('/projects/simple-book-storage.png'),
         techstack: [
             TECH.html5,
             TECH.css3,

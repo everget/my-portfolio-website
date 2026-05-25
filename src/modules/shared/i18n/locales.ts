@@ -1,4 +1,5 @@
 import type { Locale } from '@/modules/preferences/domain/locale';
+import { publicAssetUrl } from '@/modules/shared/lib/utils';
 
 function makeLocaleDescriptor<F extends string>(
     title: string,
@@ -10,7 +11,7 @@ function makeLocaleDescriptor<F extends string>(
         title,
         code,
         dir,
-        flagSrc: `./flags/${flag}.svg`,
+        flagSrc: publicAssetUrl(`/flags/${flag}.svg`),
         flagKey: `flags.${flag}` as `flags.${F}`,
     };
 }

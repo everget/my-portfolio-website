@@ -84,6 +84,8 @@
 ## Build output
 
 - It is **prohibited** to add the `dist/` folder to `.gitignore`. The build output must remain trackable so the deploy pipeline and local previews work correctly.
+- Before every commit you **MUST** verify that `vite.config.ts` reads `base` from `VITE_BASE_PATH` (currently `/my-portfolio-website/` in `.env`). The site is deployed to a GitHub Pages project page, so dropping or changing `base` will break all asset URLs in the deployed `index.html` and produce 404s for `/assets/*.js`, `/assets/*.css`, `/favicon.svg`, etc. The same `VITE_BASE_PATH` is also consumed by `playwright.config.ts` so the dev server URL stays in sync.
+- Runtime asset paths stored as plain strings (e.g. in `domain/*-data.ts` or `<img src>`) must go through `publicAssetUrl()` from `@/modules/shared/lib/utils` - Vite rewrites HTML/JSX `src`/`href` attributes for you, but does not touch string literals in data files.
 
 ## CI pipeline
 

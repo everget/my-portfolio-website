@@ -10,7 +10,9 @@ try {
 }
 
 const port = process.env.VITE_DEV_PORT ?? '5173';
-const FRONTEND_URL = `http://localhost:${port}`;
+// Must match `base` in vite.config.ts - the dev server only serves the app under this path.
+const basePath = process.env.VITE_BASE_PATH ?? '/';
+const FRONTEND_URL = `http://localhost:${port}${basePath}`;
 const PLAYWRIGHT_DIR = './tests/e2e';
 
 // See https://playwright.dev/docs/test-configuration.

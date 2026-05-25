@@ -1,3 +1,5 @@
+import { publicAssetUrl } from '@/modules/shared/lib/utils';
+
 // Icon keys that are dark-filled SVGs and need `dark:invert` in dark mode.
 export const darkInvertIconKeys = new Set([
     'bem',
@@ -9,7 +11,7 @@ export const darkInvertIconKeys = new Set([
     'shadcn',
 ]);
 
-export const iconUrls: Record<string, string> = {
+const rawIconUrls: Record<string, string> = {
     anaconda: '/skill-icons/anaconda.svg',
     angular: '/skill-icons/angular.svg',
     angularjs: '/skill-icons/angularjs.svg',
@@ -153,3 +155,7 @@ export const iconUrls: Record<string, string> = {
     zod: '/skill-icons/zod.svg',
     zustand: '/skill-icons/not-available.svg',
 };
+
+export const iconUrls: Record<string, string> = Object.fromEntries(
+    Object.entries(rawIconUrls).map(([k, v]) => [k, publicAssetUrl(v)]),
+);
