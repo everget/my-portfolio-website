@@ -1,0 +1,83 @@
+# https://lefthook.dev/configuration/
+# Run `pnpm exec lefthook install` once after pulling this file.
+
+assert_lefthook_installed: true
+no_tty: false
+colors: true
+
+# ---------------------------------------------------------------------------
+# pre-commit: lint + format only staged files; run tsc project-wide once.
+# ---------------------------------------------------------------------------
+pre-commit:
+    parallel: true
+    jobs:
+        - name: types:check
+          glob: '*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'
+          run: pnpm run types:check
+
+        - name: lint:js
+          glob: '*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'
+          run: pnpm exec oxlint --fix {staged_files}
+          stage_fixed: true
+
+        - name: lint:styles
+          glob: '*.{css,scss,sass,less,styl}'
+          run: pnpm exec stylelint --cache --fix {staged_files}
+          stage_fixed: true
+
+        - name: format
+          run: pnpm run format
+          stage_fixed: true
+
+# ---------------------------------------------------------------------------
+# commit-msg: lint the commit message via commitlint.
+# ---------------------------------------------------------------------------
+commit-msg:
+    jobs:
+        - name: commitlint
+          run: pnpm exec commitlint --edit {1}
+
+# ---------------------------------------------------------------------------
+# pre-push: full repo check + tests for files reachable from staged changes.
+# Skipped when the working tree is dirty (matches the husky behavior).
+# ---------------------------------------------------------------------------
+pre-push:
+    jobs:
+        - name: check
+          run: pnpm run check
+          skip:
+              - run: git diff HEAD --quiet; test $? -ne 0
+
+        - name: test:related
+          run: pnpm run test:related
+          skip:
+              - run: git diff HEAD --quiet; test $? -ne 0
+
+# ---------------------------------------------------------------------------
+# post-checkout / post-merge / post-rebase: auto-reinstall deps if the
+# lockfile or workspace manifest changed between the two refs.
+# ---------------------------------------------------------------------------
+# post-checkout:
+#   follow: true
+#   jobs:
+#     - name: pnpm-install-if-lock-changed
+#       run: pnpm install --prefer-offline
+#       only:
+#         - run: git diff --name-only {1} {2} \
+#               | grep -E '(^|/)(pnpm-lock\.yaml|package\.json|pnpm-workspace\.yaml)$'
+
+# post-merge:
+#   jobs:
+#     - name: pnpm-install-if-lock-changed
+#       run: pnpm install --prefer-offline
+#       only:
+#         - run: git diff --name-only HEAD@{1} HEAD \
+#               | grep -E '(^|/)(pnpm-lock\.yaml|package\.json|pnpm-workspace\.yaml)$'
+
+# post-rebase:
+#   jobs:
+#     - name: pnpm-install-if-lock-changed
+#       run: pnpm install --prefer-offline
+#       only:
+#         - run: git diff --name-only ORIG_HEAD HEAD \
+#               | grep -E '(^|/)(pnpm-lock\.yaml|package\.json|pnpm-workspace\.yaml)$'

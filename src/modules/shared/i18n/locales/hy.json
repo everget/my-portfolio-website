@@ -1,0 +1,133 @@
+{
+    "appTitle": "Անմուշ",
+    "welcome": {
+        "greeting": "Բարև, Աշխարհ!",
+        "description": "Մեկնարկային ձևանմուշ հետևյալ տեխնոլոգիաներով:"
+    },
+    "flags": {
+        "en": "Մեծ Բրիտանիայի դրոշ",
+        "es": "Իսպանիայի դրոշ",
+        "fr": "Ֆրանսիայի դրոշ",
+        "br": "Բրազիլիայի դրոշ",
+        "ua": "Ուկրաինայի դրոշ",
+        "ru": "Ռուսաստանի դրոշ",
+        "am": "Հայաստանի դրոշ",
+        "de": "Գերմանիայի դրոշ",
+        "cn": "Չինաստանի դրոշ",
+        "jp": "Ճապոնիայի դրոշ",
+        "tr": "Թուրքիայի դրոշ",
+        "sa": "Սաուդյան Արաբիայի դրոշ",
+        "il": "Իսրայելի դրոշ",
+        "ge": "Վրաստանի դրոշ",
+        "it": "Իտալիայի դրոշ",
+        "pl": "Լեհաստանի դրոշ",
+        "in": "Հնդկաստանի դրոշ"
+    },
+    "theme": {
+        "switchToLight": "Անցնել բաց թեմային",
+        "switchToDark": "Անցնել մութ թեմային"
+    },
+    "locale": {
+        "en": "Անգլերեն",
+        "es": "Իսպաներեն",
+        "fr": "Ֆրանսերեն",
+        "pt-br": "Պորտուգալերեն (Բրազիլիա)",
+        "uk": "Ուկրաիներեն",
+        "ru": "Ռուսերեն",
+        "hy": "Հայերեն",
+        "de": "Գերմաներեն",
+        "zh": "Չինարեն",
+        "ja": "Ճապոներեն",
+        "tr": "Թուրքերեն",
+        "ar": "Արաբերեն",
+        "he": "Եբրայերեն",
+        "ka": "Վրացերեն",
+        "it": "Իտալերեն",
+        "pl": "Լեհերեն",
+        "hi": "Հինդի"
+    },
+    "counter": {
+        "label": {
+            "one": "{{count}} սեղմում",
+            "other": "{{count}} սեղմում"
+        }
+    },
+    "portfolio": {
+        "header": {
+            "title": "Իմ Պորտֆոլիոն",
+            "toggleTheme": "Փոխել թեման",
+            "selectLanguage": "Ընտրել լեզուն"
+        },
+        "footer": {
+            "rights": "Բոլոր իրավունքները պաշտպանված են:",
+            "madeWithLove": "Ստեղծված է ❤️-ով"
+        },
+        "projects": {
+            "title": "Ընտրված նախագծեր",
+            "subtitle": "Տեսեք, թե ինչի եմ աշխատել վերջերս:",
+            "liveDemo": "Կենդանի դեմո",
+            "viewCode": "Տեսնել կոդը",
+            "items": {
+                "portfolioWebsite": {
+                    "title": "Պորտֆոլիոյի կայքէջ (դուք այստեղ եք)",
+                    "description": "Մի քիչ ռեկուրսիա, որպեսզի ձեր UX-ը ավելի հետաքրքիր դարձնեք :)"
+                },
+                "pineScriptCheatsheet": {
+                    "title": "Pine Script շպարգալկա",
+                    "description": "Pine Script շպարգալկա"
+                },
+                "calculator": {
+                    "title": "Հաշվիչ",
+                    "description": "Հաշվիչ՝ ստեղնաշարի դյուրանցումներով"
+                },
+                "todoList": {
+                    "title": "Ընդլայնված To-Do ցուցակ",
+                    "description": "To-Do ցուցակի հավելված՝ լրացուցիչ հնարավորություններով"
+                },
+                "spaceInvaders": {
+                    "title": "Space Invaders խաղ",
+                    "description": "Իմ թեստային աշխատանքը TradingView միանալու համար (2017թ. մայիս)"
+                },
+                "securitiesPortfolio": {
+                    "title": "Արժեթղթերի պորտֆելի հաշվիչ",
+                    "description": "Իմ թեստային աշխատանքը eSignal միանալու համար (2016թ. մայիս)"
+                },
+                "simpleBookStorage": {
+                    "title": "Գրքերի պարզ պահոց",
+                    "description": "Իմ թեստային աշխատանքը uCoz-ին միանալու համար (2016թ. մարտ)"
+                }
+            }
+        },
+        "nav": {
+            "projects": "Ծրագրեր",
+            "skills": "Հմտություններ",
+            "contact": "Կապ",
+            "about": "Իմ մասին"
+        },
+        "contact": {
+            "title": "Կապ",
+            "getInTouch": "Կապ հաստատել"
+        },
+        "skills": {
+            "title": "Հմտություններ և Տեխնոլոգիաներ",
+            "categories": {
+                "principles": "Սկզբունքներ",
+                "methodologies": "Մեթոդաբանություններ և Պրակտիկաներ",
+                "languages": "Լեզուներ",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "testing": "Փորձարկում",
+                "cicd": "CI/CD",
+                "dataScience": "Տվյալների գիտություն",
+                "otherTools": "Այլ գործիքներ"
+            },
+            "yearAbbr": "տ"
+        },
+        "hero": {
+            "greeting": "Բարև, ես Ալեքս եմ",
+            "title": "Ֆուլ Ստեք վեբ ծրագրավորող",
+            "description": "Ես ստեղծում եմ ժամանակակից վեբ հավելվածներ առաջավոր տեխնոլոգիաներով։",
+            "tagline": "Կrqotem maqur arkhitek'turayov, dzrragravoroghi lav patkeratssum yev aynpisi bnagavorutyunneri stextsagortsutyun, oronq manraknerin irastes zvacharutyun en pahanjum."
+        }
+    }
+}

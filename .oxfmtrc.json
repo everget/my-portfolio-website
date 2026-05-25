@@ -1,0 +1,28 @@
+{
+    "$schema": "./node_modules/oxfmt/configuration_schema.json",
+    "useTabs": false,
+    "tabWidth": 4,
+    "printWidth": 100,
+    "singleQuote": true,
+    "jsxSingleQuote": false,
+    "semi": true,
+    "trailingComma": "all",
+    "arrowParens": "always",
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "endOfLine": "lf",
+    "ignorePatterns": [
+        "_dev",
+        "dist",
+        "build",
+        "coverage",
+        "storybook-static",
+        "playwright-report",
+        "tests/e2e/report",
+        "tests/e2e/test-results",
+        "node_modules",
+        "pnpm-lock.yaml",
+        "*.min.*",
+        "public"
+    ]
+}

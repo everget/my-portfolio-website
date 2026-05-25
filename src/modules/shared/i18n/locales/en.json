@@ -1,0 +1,133 @@
+{
+    "appTitle": "Template",
+    "welcome": {
+        "greeting": "Hello, World!",
+        "description": "A starter template with the following technologies:"
+    },
+    "flags": {
+        "en": "Flag of the United Kingdom",
+        "es": "Flag of Spain",
+        "fr": "Flag of France",
+        "br": "Flag of Brazil",
+        "ua": "Flag of Ukraine",
+        "ru": "Flag of Russia",
+        "am": "Flag of Armenia",
+        "de": "Flag of Germany",
+        "cn": "Flag of China",
+        "jp": "Flag of Japan",
+        "tr": "Flag of Turkey",
+        "sa": "Flag of Saudi Arabia",
+        "il": "Flag of Israel",
+        "ge": "Flag of Georgia",
+        "it": "Flag of Italy",
+        "pl": "Flag of Poland",
+        "in": "Flag of India"
+    },
+    "theme": {
+        "switchToLight": "Switch to light theme",
+        "switchToDark": "Switch to dark theme"
+    },
+    "locale": {
+        "en": "English",
+        "es": "Spanish",
+        "fr": "French",
+        "pt-br": "Portuguese",
+        "uk": "Ukrainian",
+        "ru": "Russian",
+        "hy": "Armenian",
+        "de": "German",
+        "zh": "Chinese",
+        "ja": "Japanese",
+        "tr": "Turkish",
+        "ar": "Arabic",
+        "he": "Hebrew",
+        "ka": "Georgian",
+        "it": "Italian",
+        "pl": "Polish",
+        "hi": "Hindi"
+    },
+    "counter": {
+        "label": {
+            "one": "{{count}} click",
+            "other": "{{count}} clicks"
+        }
+    },
+    "portfolio": {
+        "header": {
+            "title": "My Portfolio",
+            "toggleTheme": "Toggle theme",
+            "selectLanguage": "Select language"
+        },
+        "footer": {
+            "rights": "All rights reserved.",
+            "madeWithLove": "Made with ❤️"
+        },
+        "projects": {
+            "title": "Featured Projects",
+            "subtitle": "Check out what I've been working on lately.",
+            "liveDemo": "Live Demo",
+            "viewCode": "View Code",
+            "items": {
+                "portfolioWebsite": {
+                    "title": "Portfolio Website (you are here)",
+                    "description": "A little recursion to spice up your UX :)"
+                },
+                "pineScriptCheatsheet": {
+                    "title": "Pine Script Cheatsheet",
+                    "description": "Pine Script Cheatsheet"
+                },
+                "calculator": {
+                    "title": "Calculator",
+                    "description": "Calculator with keyboard shortcuts"
+                },
+                "todoList": {
+                    "title": "Advanced To-Do List",
+                    "description": "A To-Do list app with some additional functionality"
+                },
+                "spaceInvaders": {
+                    "title": "Space Invaders Game",
+                    "description": "My test task to join TradingView (May of 2017)"
+                },
+                "securitiesPortfolio": {
+                    "title": "Securities Portfolio Calculator",
+                    "description": "My test task to join eSignal (May of 2016)"
+                },
+                "simpleBookStorage": {
+                    "title": "Simple Book Storage",
+                    "description": "My test task to join uCoz (March of 2016)"
+                }
+            }
+        },
+        "nav": {
+            "about": "About",
+            "projects": "Projects",
+            "skills": "Skills",
+            "contact": "Contact"
+        },
+        "hero": {
+            "greeting": "Hi, I'm Alex",
+            "title": "Full Stack Web Developer",
+            "description": "I create modern web applications with cutting-edge technologies.",
+            "tagline": "Focused on clean architecture, great developer experience, and building things people genuinely enjoy using."
+        },
+        "contact": {
+            "title": "Contact",
+            "getInTouch": "Get in touch"
+        },
+        "skills": {
+            "title": "Skills & Tech Stack",
+            "yearAbbr": "y",
+            "categories": {
+                "principles": "Principles",
+                "methodologies": "Methodologies & Practices",
+                "languages": "Languages",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "testing": "Testing",
+                "cicd": "CI/CD",
+                "otherTools": "Other Tools",
+                "dataScience": "Data Science"
+            }
+        }
+    }
+}

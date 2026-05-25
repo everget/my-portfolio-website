@@ -1,0 +1,133 @@
+{
+    "appTitle": "Modelo",
+    "welcome": {
+        "greeting": "Olá, Mundo!",
+        "description": "Um modelo inicial com as seguintes tecnologias:"
+    },
+    "flags": {
+        "en": "Bandeira do Reino Unido",
+        "es": "Bandeira da Espanha",
+        "fr": "Bandeira da França",
+        "br": "Bandeira do Brasil",
+        "ua": "Bandeira da Ucrânia",
+        "ru": "Bandeira da Rússia",
+        "am": "Bandeira da Armênia",
+        "de": "Bandeira da Alemanha",
+        "cn": "Bandeira da China",
+        "jp": "Bandeira do Japão",
+        "tr": "Bandeira da Turquia",
+        "sa": "Bandeira da Arábia Saudita",
+        "il": "Bandeira de Israel",
+        "ge": "Bandeira da Geórgia",
+        "it": "Bandeira da Itália",
+        "pl": "Bandeira da Polônia",
+        "in": "Bandeira da Índia"
+    },
+    "theme": {
+        "switchToLight": "Mudar para tema claro",
+        "switchToDark": "Mudar para tema escuro"
+    },
+    "locale": {
+        "en": "Inglês",
+        "es": "Espanhol",
+        "fr": "Francês",
+        "pt-br": "Português",
+        "uk": "Ucraniano",
+        "ru": "Russo",
+        "hy": "Armênio",
+        "de": "Alemão",
+        "zh": "Chinês",
+        "ja": "Japonês",
+        "tr": "Turco",
+        "ar": "Árabe",
+        "he": "Hebraico",
+        "ka": "Georgiano",
+        "it": "Italiano",
+        "pl": "Polonês",
+        "hi": "Hindi"
+    },
+    "counter": {
+        "label": {
+            "one": "{{count}} clique",
+            "other": "{{count}} cliques"
+        }
+    },
+    "portfolio": {
+        "header": {
+            "title": "Meu Portfólio",
+            "toggleTheme": "Alternar tema",
+            "selectLanguage": "Selecionar idioma"
+        },
+        "footer": {
+            "rights": "Todos os direitos reservados.",
+            "madeWithLove": "Feito com ❤️"
+        },
+        "projects": {
+            "title": "Projetos em Destaque",
+            "subtitle": "Confira o que tenho feito ultimamente.",
+            "liveDemo": "Demo ao Vivo",
+            "viewCode": "Ver Código",
+            "items": {
+                "portfolioWebsite": {
+                    "title": "Website de Portfólio (você está aqui)",
+                    "description": "Um pouco de recursividade para apimentar sua experiência do usuário :)"
+                },
+                "pineScriptCheatsheet": {
+                    "title": "Folha de referência do Pine Script",
+                    "description": "Folha de referência do Pine Script"
+                },
+                "calculator": {
+                    "title": "Calculadora",
+                    "description": "Calculadora com atalhos de teclado"
+                },
+                "todoList": {
+                    "title": "Lista de Tarefas Avançada",
+                    "description": "Um aplicativo de lista de tarefas com funcionalidades adicionais"
+                },
+                "spaceInvaders": {
+                    "title": "Jogo Space Invaders",
+                    "description": "Minha tarefa de teste para ingressar no TradingView (Maio de 2017)"
+                },
+                "securitiesPortfolio": {
+                    "title": "Calculadora de carteira de valores mobiliários",
+                    "description": "Minha tarefa de teste para ingressar no eSignal (Maio de 2016)"
+                },
+                "simpleBookStorage": {
+                    "title": "Armazenamento Simples de Livros",
+                    "description": "Minha tarefa de teste para ingressar no uCoz (Março de 2016)"
+                }
+            }
+        },
+        "nav": {
+            "projects": "Projetos",
+            "skills": "Habilidades",
+            "contact": "Contato",
+            "about": "Sobre"
+        },
+        "contact": {
+            "title": "Contato",
+            "getInTouch": "Entre em contato"
+        },
+        "skills": {
+            "title": "Habilidades & Tecnologias",
+            "categories": {
+                "principles": "Princípios",
+                "methodologies": "Metodologias & Práticas",
+                "languages": "Linguagens",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "testing": "Testes",
+                "cicd": "CI/CD",
+                "dataScience": "Ciência de Dados",
+                "otherTools": "Outras Ferramentas"
+            },
+            "yearAbbr": "a"
+        },
+        "hero": {
+            "greeting": "Olá, sou Alex",
+            "title": "Desenvolvedor Web Full Stack",
+            "description": "Crio aplicações web modernas com tecnologias de ponta.",
+            "tagline": "Focado em arquitetura limpa, ótima experiência de desenvolvimento e criar coisas que as pessoas genuinamente gostam de usar."
+        }
+    }
+}

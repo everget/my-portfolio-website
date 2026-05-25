@@ -1,0 +1,130 @@
+{
+    "appTitle": "模板",
+    "welcome": {
+        "greeting": "你好，世界！",
+        "description": "包含以下技术的入门模板："
+    },
+    "flags": {
+        "en": "英国国旗",
+        "es": "西班牙国旗",
+        "fr": "法国国旗",
+        "br": "巴西国旗",
+        "ua": "乌克兰国旗",
+        "ru": "俄罗斯国旗",
+        "am": "亚美尼亚国旗",
+        "de": "德国国旗",
+        "cn": "中国国旗",
+        "jp": "日本国旗",
+        "tr": "土耳其国旗",
+        "sa": "沙特阿拉伯国旗",
+        "il": "以色列国旗",
+        "ge": "格鲁吉亚国旗",
+        "it": "意大利国旗",
+        "pl": "波兰国旗",
+        "in": "印度国旗"
+    },
+    "theme": {
+        "switchToLight": "切换到亮色主题",
+        "switchToDark": "切换到暗色主题"
+    },
+    "locale": {
+        "en": "英语",
+        "es": "西班牙语",
+        "fr": "法语",
+        "pt-br": "葡萄牙语（巴西）",
+        "uk": "乌克兰语",
+        "ru": "俄语",
+        "hy": "亚美尼亚语",
+        "de": "德语",
+        "zh": "中文",
+        "ja": "日语",
+        "tr": "土耳其语",
+        "ar": "阿拉伯语",
+        "he": "希伯来语",
+        "ka": "格鲁吉亚语",
+        "it": "意大利语",
+        "pl": "波兰语",
+        "hi": "印地语"
+    },
+    "counter": {
+        "label": "点击 {{count}} 次"
+    },
+    "portfolio": {
+        "header": {
+            "title": "我的作品集",
+            "toggleTheme": "切换主题",
+            "selectLanguage": "选择语言"
+        },
+        "footer": {
+            "rights": "版权所有。",
+            "madeWithLove": "用 ❤️ 制作"
+        },
+        "projects": {
+            "title": "精选项目",
+            "subtitle": "看看我最近在做什么。",
+            "liveDemo": "在线演示",
+            "viewCode": "查看代码",
+            "items": {
+                "portfolioWebsite": {
+                    "title": "作品集网站（您正在这里）",
+                    "description": "一点递归让您的用户体验更有趣 :)"
+                },
+                "pineScriptCheatsheet": {
+                    "title": "Pine Script 快速参考",
+                    "description": "Pine Script 快速参考"
+                },
+                "calculator": {
+                    "title": "计算器",
+                    "description": "支持键盘快捷键的计算器"
+                },
+                "todoList": {
+                    "title": "高级待办事项",
+                    "description": "一个具有额外功能的待办事项应用"
+                },
+                "spaceInvaders": {
+                    "title": "Space Invaders 游戏",
+                    "description": "我加入 TradingView 的测试任务（2017年5月）"
+                },
+                "securitiesPortfolio": {
+                    "title": "证券组合计算器",
+                    "description": "我加入 eSignal 的测试任务（2016年5月）"
+                },
+                "simpleBookStorage": {
+                    "title": "简易图书存储",
+                    "description": "我加入uCoz的测试任务（2016年3月）"
+                }
+            }
+        },
+        "nav": {
+            "projects": "项目",
+            "skills": "技能",
+            "contact": "联系",
+            "about": "关于"
+        },
+        "contact": {
+            "title": "联系方式",
+            "getInTouch": "联系我"
+        },
+        "skills": {
+            "title": "技能与技术栈",
+            "categories": {
+                "principles": "原则",
+                "methodologies": "方法论与实践",
+                "languages": "编程语言",
+                "frontend": "前端",
+                "backend": "后端",
+                "testing": "测试",
+                "cicd": "CI/CD",
+                "dataScience": "数据科学",
+                "otherTools": "其他工具"
+            },
+            "yearAbbr": "年"
+        },
+        "hero": {
+            "greeting": "你好，我是 Alex",
+            "title": "全栈 Web 开发者",
+            "description": "我使用前沿技术构建现代 Web 应用程序。",
+            "tagline": "专注于简洁架构、出色的开发者体验，以及打造人们真正喜爱使用的产品。"
+        }
+    }
+}

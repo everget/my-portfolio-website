@@ -1,0 +1,98 @@
+@import 'tailwindcss';
+
+/* Enables the `dark:` variant for Tailwind v4 using an explicit class toggle. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/*
+ * All color tokens are defined once using light-dark().
+ * Switching to dark mode only requires toggling color-scheme -
+ * the browser resolves light-dark() automatically.
+ *
+ * Tokens follow the shadcn "neutral" palette so the components in
+ * modules/shared/ui/ render correctly with no per-component overrides.
+ */
+:root {
+    color-scheme: light;
+
+    --radius: 0.625rem;
+    --background: light-dark(oklch(100% 0 0deg), oklch(14.5% 0 0deg));
+    --foreground: light-dark(oklch(14.5% 0 0deg), oklch(98.5% 0 0deg));
+    --card: light-dark(oklch(100% 0 0deg), oklch(20.5% 0 0deg));
+    --card-foreground: light-dark(oklch(14.5% 0 0deg), oklch(98.5% 0 0deg));
+    --popover: light-dark(oklch(100% 0 0deg), oklch(20.5% 0 0deg));
+    --popover-foreground: light-dark(oklch(14.5% 0 0deg), oklch(98.5% 0 0deg));
+    --primary: light-dark(oklch(20.5% 0 0deg), oklch(92.2% 0 0deg));
+    --primary-foreground: light-dark(oklch(98.5% 0 0deg), oklch(20.5% 0 0deg));
+    --secondary: light-dark(oklch(97% 0 0deg), oklch(26.9% 0 0deg));
+    --secondary-foreground: light-dark(oklch(20.5% 0 0deg), oklch(98.5% 0 0deg));
+    --muted: light-dark(oklch(97% 0 0deg), oklch(26.9% 0 0deg));
+    --muted-foreground: light-dark(oklch(55.6% 0 0deg), oklch(70.8% 0 0deg));
+    --accent: light-dark(oklch(97% 0 0deg), oklch(26.9% 0 0deg));
+    --accent-foreground: light-dark(oklch(20.5% 0 0deg), oklch(98.5% 0 0deg));
+    --destructive: light-dark(oklch(57.7% 0.245 27.325deg), oklch(70.4% 0.191 22.216deg));
+    --destructive-foreground: oklch(98.5% 0 0deg);
+    --border: light-dark(oklch(92.2% 0 0deg), oklch(100% 0 0deg / 10%));
+    --input: light-dark(oklch(92.2% 0 0deg), oklch(100% 0 0deg / 15%));
+    --ring: light-dark(oklch(70.8% 0 0deg), oklch(55.6% 0 0deg));
+
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-synthesis: none;
+    font-weight: 400;
+    line-height: 1.5;
+    text-rendering: optimizelegibility;
+    background-color: var(--background);
+    color: var(--foreground);
+}
+
+/* Explicit dark mode toggled by the theme switcher */
+.dark {
+    color-scheme: dark;
+}
+
+/* Honour OS dark-mode preference when no explicit theme class is set */
+@media (prefers-color-scheme: dark) {
+    :root:not(.dark, .light) {
+        color-scheme: dark;
+    }
+}
+
+@theme inline {
+    --radius-sm: calc(var(--radius) - 4px);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-lg: var(--radius);
+    --radius-xl: calc(var(--radius) + 4px);
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-border: var(--border);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+}

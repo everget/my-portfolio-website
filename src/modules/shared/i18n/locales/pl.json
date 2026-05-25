@@ -1,0 +1,135 @@
+{
+    "appTitle": "Szablon",
+    "welcome": {
+        "greeting": "Cześć, Świecie!",
+        "description": "Szablon startowy z następującymi technologiami:"
+    },
+    "flags": {
+        "en": "Flaga Wielkiej Brytanii",
+        "es": "Flaga Hiszpanii",
+        "fr": "Flaga Francji",
+        "br": "Flaga Brazylii",
+        "ua": "Flaga Ukrainy",
+        "ru": "Flaga Rosji",
+        "am": "Flaga Armenii",
+        "de": "Flaga Niemiec",
+        "cn": "Flaga Chin",
+        "jp": "Flaga Japonii",
+        "tr": "Flaga Turcji",
+        "sa": "Flaga Arabii Saudyjskiej",
+        "il": "Flaga Izraela",
+        "ge": "Flaga Gruzji",
+        "it": "Flaga Włoch",
+        "pl": "Flaga Polski",
+        "in": "Flaga Indii"
+    },
+    "theme": {
+        "switchToLight": "Przełącz na jasny motyw",
+        "switchToDark": "Przełącz na ciemny motyw"
+    },
+    "locale": {
+        "en": "Angielski",
+        "es": "Hiszpański",
+        "fr": "Francuski",
+        "pt-br": "Portugalski",
+        "uk": "Ukraiński",
+        "ru": "Rosyjski",
+        "hy": "Ormiański",
+        "de": "Niemiecki",
+        "zh": "Chiński",
+        "ja": "Japoński",
+        "tr": "Turecki",
+        "ar": "Arabski",
+        "he": "Hebrajski",
+        "ka": "Gruziński",
+        "it": "Włoski",
+        "pl": "Polski",
+        "hi": "Hindi"
+    },
+    "counter": {
+        "label": {
+            "one": "{{count}} kliknięcie",
+            "few": "{{count}} kliknięcia",
+            "many": "{{count}} kliknięć",
+            "other": "{{count}} kliknięcia"
+        }
+    },
+    "portfolio": {
+        "header": {
+            "title": "Moje Portfolio",
+            "toggleTheme": "Przełącz motyw",
+            "selectLanguage": "Wybierz język"
+        },
+        "footer": {
+            "rights": "Wszelkie prawa zastrzeżone.",
+            "madeWithLove": "Zrobione z ❤️"
+        },
+        "projects": {
+            "title": "Wyróżnione Projekty",
+            "subtitle": "Sprawdź, nad czym ostatnio pracowałem.",
+            "liveDemo": "Podgląd na żywo",
+            "viewCode": "Zobacz kod",
+            "items": {
+                "portfolioWebsite": {
+                    "title": "Strona Portfolio (jesteś tutaj)",
+                    "description": "Trochę rekurencji, aby urozmaicić Twoje UX :)"
+                },
+                "pineScriptCheatsheet": {
+                    "title": "Ściągawka Pine Script",
+                    "description": "Ściągawka Pine Script"
+                },
+                "calculator": {
+                    "title": "Kalkulator",
+                    "description": "Kalkulator ze skrótami klawiaturowymi"
+                },
+                "todoList": {
+                    "title": "Zaawansowana Lista To-Do",
+                    "description": "Aplikacja listy zadań z dodatkowymi funkcjami"
+                },
+                "spaceInvaders": {
+                    "title": "Gra Space Invaders",
+                    "description": "Moje zadanie testowe do dołączenia do TradingView (maj 2017)"
+                },
+                "securitiesPortfolio": {
+                    "title": "Kalkulator Portfela Papierów Wartościowych",
+                    "description": "Moje zadanie testowe do dołączenia do eSignal (maj 2016)"
+                },
+                "simpleBookStorage": {
+                    "title": "Proste Przechowywanie Książek",
+                    "description": "Moje zadanie testowe do dołączenia do uCoz (marzec 2016)"
+                }
+            }
+        },
+        "nav": {
+            "projects": "Projekty",
+            "skills": "Umiejętności",
+            "contact": "Kontakt",
+            "about": "O mnie"
+        },
+        "contact": {
+            "title": "Kontakt",
+            "getInTouch": "Skontaktuj się"
+        },
+        "skills": {
+            "title": "Umiejętności & Technologie",
+            "categories": {
+                "principles": "Zasady",
+                "methodologies": "Metodologie i Praktyki",
+                "languages": "Języki",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "testing": "Testowanie",
+                "cicd": "CI/CD",
+                "dataScience": "Data Science",
+                "otherTools": "Inne Narzędzia"
+            },
+            "yearAbbr": "l"
+        },
+        "hero": {
+            "greeting": "Cześć, jestem Alex",
+            "title": "Full Stack Web Developer",
+            "description": "Tworzę nowoczesne aplikacje webowe z najnowszymi technologiami.",
+            "tagline": "Skupiony na czystej architekturze, świetnej DX i budowaniu rzeczy, z których ludzie naprawdę lubią korzystać."
+        }
+    }
+}

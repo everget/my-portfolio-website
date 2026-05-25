@@ -1,0 +1,115 @@
+{
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
+    "plugins": [
+        "typescript",
+        "unicorn",
+        "oxc",
+        "react",
+        "react-perf",
+        "jsx-a11y",
+        "import",
+        "promise",
+        "node",
+        "vitest",
+        "jest"
+    ],
+    "categories": {
+        "correctness": "error",
+        "suspicious": "error",
+        "perf": "warn",
+        "restriction": "off",
+        "pedantic": "off",
+        "style": "off",
+        "nursery": "off"
+    },
+    "env": {
+        "builtin": true,
+        "browser": true,
+        "node": true,
+        "es2024": true
+    },
+    "globals": {
+        "React": "readonly",
+        "JSX": "readonly"
+    },
+    "settings": {
+        "react": {
+            "version": "19.0.0"
+        }
+    },
+    "ignorePatterns": [
+        "_dev",
+        "dist",
+        "build",
+        "coverage",
+        "storybook-static",
+        "playwright-report",
+        "tests/e2e/report",
+        "tests/e2e/test-results",
+        "node_modules",
+        "public",
+        "*.min.js"
+    ],
+    "rules": {
+        "no-console": ["warn", { "allow": ["warn", "error"] }],
+
+        "import/no-duplicates": "error",
+        "import/no-self-import": "error",
+        "import/no-cycle": "error",
+
+        // React Compiler handles memoization automatically - inline functions are safe
+        "react-perf/jsx-no-new-function-as-prop": "off",
+
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-no-useless-fragment": "warn",
+        "react/self-closing-comp": "warn",
+
+        "typescript/ban-ts-comment": "warn",
+        "typescript/consistent-type-imports": "error",
+        "typescript/no-explicit-any": "warn",
+        "typescript/no-non-null-assertion": "warn",
+        "no-unused-vars": ["error", { "argsIgnorePattern": "^_", "varsIgnorePattern": "^_" }],
+        "import/no-unassigned-import": "off"
+    },
+    "overrides": [
+        {
+            "files": [
+                "**/*.test.{ts,tsx,js,jsx}",
+                "**/*.spec.{ts,tsx,js,jsx}",
+                "tests/**",
+                "src/**/__tests__/**"
+            ],
+            "env": { "vitest": true, "jest": true },
+            "rules": {
+                "typescript/no-explicit-any": "off",
+                "typescript/no-non-null-assertion": "off",
+                "no-console": "off",
+                "vitest/require-mock-type-parameters": "off",
+                "unicorn/no-empty-file": "off"
+            }
+        },
+        {
+            "files": ["tests/e2e/**", "**/*.pw.{ts,js}", "playwright.config.ts"],
+            "env": { "node": true },
+            "rules": {
+                "no-empty-pattern": "off",
+                "no-empty-function": "off"
+            }
+        },
+        {
+            "files": [
+                "*.config.{js,mjs,cjs,ts,mts,cts}",
+                "vite.config.ts",
+                "vitest.config.ts",
+                "playwright.config.ts",
+                "stylelint.config.mjs",
+                "commitlint.config.mjs"
+            ],
+            "env": { "node": true },
+            "rules": {
+                "import/no-default-export": "off",
+                "no-console": "off"
+            }
+        }
+    ]
+}
