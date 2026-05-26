@@ -65,6 +65,8 @@ export function Skills() {
                                                     src={iconSrc}
                                                     alt=""
                                                     aria-hidden="true"
+                                                    loading="lazy"
+                                                    decoding="async"
                                                     className={cn(
                                                         'h-4 w-4 shrink-0',
                                                         invertIcon && 'dark:invert',
