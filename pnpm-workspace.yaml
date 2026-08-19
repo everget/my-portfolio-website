@@ -1,3 +1,26 @@
+minimumReleaseAge: 10080
+
+blockExoticSubdeps: true
+
+trustPolicy: no-downgrade
+
+# Ignore trust checks for very old packages that predate
+# provenance/trusted publishing ecosystems.
+trustPolicyIgnoreAfter: 180
+
+# Only explicitly trusted packages may execute build/postinstall scripts.
 allowBuilds:
     esbuild: true
     lefthook: true
+
+    # Common native/binary toolchain packages.
+    # Keep ONLY what your project actually requires.
+    '@swc/core': false
+    sharp: false
+    better-sqlite3: false
+    nx: false
+    prisma: false
+
+# Optional: allow exceptions if trust policy becomes too strict.
+# trustPolicyExclude:
+#     - some-legacy-package

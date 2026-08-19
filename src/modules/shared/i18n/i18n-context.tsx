@@ -39,7 +39,21 @@ export function I18nProvider({ children, locale }: { children: ReactNode; locale
         }
         // Load the locale chunk; keep current catalog until it arrives to avoid
         // a flash of untranslated content during the fetch.
-        void localeLoaders[locale]().then((m) => setCatalog(m.default));
+        // `stale` guards against a slower earlier locale resolving last.
+        let stale = false;
+        void (async () => {
+            try {
+                const m = await localeLoaders[locale]();
+                if (!stale) setCatalog(m.default);
+            } catch {
+                // A chunk can 404 after a redeploy, or fail on a flaky network.
+                // Fall back to English rather than stranding the UI.
+                if (!stale) setCatalog(enMessages);
+            }
+        })();
+        return () => {
+            stale = true;
+        };
     }, [locale]);
 
     const t = useMemo(() => createTranslator(catalog, locale), [catalog, locale]);
