@@ -1,4 +1,7 @@
-@import 'tailwindcss';
+/* Scan only src/ and index.html - scanning the tracked dist/ would leak phantom utilities. */
+@import 'tailwindcss' source('../src');
+
+@source '../index.html';
 
 /* Enables the `dark:` variant for Tailwind v4 using an explicit class toggle. */
 @custom-variant dark (&:where(.dark, .dark *));
