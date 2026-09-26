@@ -96,7 +96,7 @@
 ## Commands
 
 - `pnpm run dev` - start dev server
-- `pnpm run types:check` - TypeScript type check
+- `pnpm run types:check` - TypeScript type check via `tsc -b`, which follows the project references in `tsconfig.json`. Do not change it to `tsc --noEmit` - the root config is solution-style (`"files": []`), so that checks nothing. `tests/` is not type-checked.
 - `pnpm run check` - types + lint + format check
 - `pnpm run fix` - lint + format fix
 - `pnpm run test` - unit tests
