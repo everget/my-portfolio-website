@@ -5,10 +5,12 @@
         "description": "Un modèle de démarrage avec les technologies suivantes :"
     },
     "flags": {
-        "en": "Drapeau du Royaume-Uni",
+        "gb": "Drapeau du Royaume-Uni",
+        "us": "Drapeau des États-Unis",
         "es": "Drapeau de l'Espagne",
         "fr": "Drapeau de la France",
         "br": "Drapeau du Brésil",
+        "pt": "Drapeau du Portugal",
         "ua": "Drapeau de l'Ukraine",
         "ru": "Drapeau de la Russie",
         "am": "Drapeau de l'Arménie",
@@ -21,17 +23,25 @@
         "ge": "Drapeau de la Géorgie",
         "it": "Drapeau de l'Italie",
         "pl": "Drapeau de la Pologne",
-        "in": "Drapeau de l'Inde"
+        "in": "Drapeau de l'Inde",
+        "nl": "Drapeau des Pays-Bas",
+        "id": "Drapeau de l'Indonésie",
+        "my": "Drapeau de la Malaisie",
+        "vn": "Drapeau du Vietnam",
+        "kr": "Drapeau de la Corée du Sud",
+        "th": "Drapeau de la Thaïlande"
     },
     "theme": {
         "switchToLight": "Passer au thème clair",
         "switchToDark": "Passer au thème sombre"
     },
     "locale": {
-        "en": "Anglais",
+        "en-gb": "Anglais (Royaume-Uni)",
+        "en-us": "Anglais (États-Unis)",
         "es": "Espagnol",
         "fr": "Français",
-        "pt-br": "Portugais",
+        "pt-br": "Portugais (Brésil)",
+        "pt-pt": "Portugais (Portugal)",
         "uk": "Ukrainien",
         "ru": "Russe",
         "hy": "Arménien",
@@ -44,7 +54,13 @@
         "ka": "Géorgien",
         "it": "Italien",
         "pl": "Polonais",
-        "hi": "Hindi"
+        "hi": "Hindi",
+        "nl": "Néerlandais",
+        "id": "Indonésien",
+        "ms": "Malais",
+        "vi": "Vietnamien",
+        "ko": "Coréen",
+        "th": "Thaï"
     },
     "counter": {
         "label": {

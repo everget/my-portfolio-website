@@ -5,10 +5,12 @@
         "description": "Szablon startowy z następującymi technologiami:"
     },
     "flags": {
-        "en": "Flaga Wielkiej Brytanii",
+        "gb": "Flaga Wielkiej Brytanii",
+        "us": "Flaga Stanów Zjednoczonych",
         "es": "Flaga Hiszpanii",
         "fr": "Flaga Francji",
         "br": "Flaga Brazylii",
+        "pt": "Flaga Portugalii",
         "ua": "Flaga Ukrainy",
         "ru": "Flaga Rosji",
         "am": "Flaga Armenii",
@@ -21,17 +23,25 @@
         "ge": "Flaga Gruzji",
         "it": "Flaga Włoch",
         "pl": "Flaga Polski",
-        "in": "Flaga Indii"
+        "in": "Flaga Indii",
+        "nl": "Flaga Holandii",
+        "id": "Flaga Indonezji",
+        "my": "Flaga Malezji",
+        "vn": "Flaga Wietnamu",
+        "kr": "Flaga Korei Południowej",
+        "th": "Flaga Tajlandii"
     },
     "theme": {
         "switchToLight": "Przełącz na jasny motyw",
         "switchToDark": "Przełącz na ciemny motyw"
     },
     "locale": {
-        "en": "Angielski",
+        "en-gb": "Angielski (Wielka Brytania)",
+        "en-us": "Angielski (Stany Zjednoczone)",
         "es": "Hiszpański",
         "fr": "Francuski",
-        "pt-br": "Portugalski",
+        "pt-br": "Portugalski (Brazylia)",
+        "pt-pt": "Portugalski (Portugalia)",
         "uk": "Ukraiński",
         "ru": "Rosyjski",
         "hy": "Ormiański",
@@ -44,7 +54,13 @@
         "ka": "Gruziński",
         "it": "Włoski",
         "pl": "Polski",
-        "hi": "Hindi"
+        "hi": "Hindi",
+        "nl": "Niderlandzki",
+        "id": "Indonezyjski",
+        "ms": "Malajski",
+        "vi": "Wietnamski",
+        "ko": "Koreański",
+        "th": "Tajski"
     },
     "counter": {
         "label": {

@@ -5,10 +5,12 @@
         "description": "Una plantilla inicial con las siguientes tecnologías:"
     },
     "flags": {
-        "en": "Bandera del Reino Unido",
+        "gb": "Bandera del Reino Unido",
+        "us": "Bandera de Estados Unidos",
         "es": "Bandera de España",
         "fr": "Bandera de Francia",
         "br": "Bandera de Brasil",
+        "pt": "Bandera de Portugal",
         "ua": "Bandera de Ucrania",
         "ru": "Bandera de Rusia",
         "am": "Bandera de Armenia",
@@ -21,17 +23,25 @@
         "ge": "Bandera de Georgia",
         "it": "Bandera de Italia",
         "pl": "Bandera de Polonia",
-        "in": "Bandera de India"
+        "in": "Bandera de India",
+        "nl": "Bandera de los Países Bajos",
+        "id": "Bandera de Indonesia",
+        "my": "Bandera de Malasia",
+        "vn": "Bandera de Vietnam",
+        "kr": "Bandera de Corea del Sur",
+        "th": "Bandera de Tailandia"
     },
     "theme": {
         "switchToLight": "Cambiar al tema claro",
         "switchToDark": "Cambiar al tema oscuro"
     },
     "locale": {
-        "en": "Inglés",
+        "en-gb": "Inglés (Reino Unido)",
+        "en-us": "Inglés (Estados Unidos)",
         "es": "Español",
         "fr": "Francés",
-        "pt-br": "Portugués",
+        "pt-br": "Portugués (Brasil)",
+        "pt-pt": "Portugués (Portugal)",
         "uk": "Ucraniano",
         "ru": "Ruso",
         "hy": "Armenio",
@@ -44,7 +54,13 @@
         "ka": "Georgiano",
         "it": "Italiano",
         "pl": "Polaco",
-        "hi": "Hindi"
+        "hi": "Hindi",
+        "nl": "Neerlandés",
+        "id": "Indonesio",
+        "ms": "Malayo",
+        "vi": "Vietnamita",
+        "ko": "Coreano",
+        "th": "Tailandés"
     },
     "counter": {
         "label": {

@@ -55,14 +55,17 @@
 
 ## i18n
 
-- `TranslationKey` is typed from `en.json` only - it is the single source of truth for all keys.
-- All other locale files must contain the same keys but may add locale-specific plural forms.
+- `TranslationKey` is typed from `en-us.json` only - it is the single source of truth for all keys, the fallback for missing strings, and the default locale (`DEFAULT_LOCALE`).
+- All other locale files must contain the same keys but may add locale-specific plural forms. `tests/unit/i18n/locales.test.ts` enforces this.
+- Locale codes and their file names are lowercase, including regional variants: `en-us`, `en-gb`, `pt-br`, `pt-pt`.
 - Plural forms use `Intl.PluralRules` with LDML categories: `zero`, `one`, `two`, `few`, `many`, `other`.
     - `other` is required. The rest are optional and language-dependent.
-    - Languages without grammatical pluralization (e.g. Chinese, Japanese, Turkish) use a plain string instead of a plural object.
-- Locale code vs flag file stem diverge for some locales:
-    - `pt-br` -> `br`, `uk` -> `ua`, `hy` -> `am`, `zh` -> `cn`, `ja` -> `jp`, `ar` -> `sa`, `he` -> `il`
-- When adding a new locale, update: `VALID_LOCALES`, `LOCALES`, the lazy loader in `i18n-context.tsx`, and add a JSON file under `src/modules/shared/i18n/locales/`.
+    - Languages without grammatical pluralization (e.g. Chinese, Japanese, Korean, Thai, Turkish) use a plain string instead of a plural object.
+- Flag file stems are ISO 3166-1 alpha-2 country codes, so they diverge from the locale code for many locales:
+    - `en-us` -> `us`, `en-gb` -> `gb`, `pt-br` -> `br`, `pt-pt` -> `pt`, `uk` -> `ua`, `hy` -> `am`, `ka` -> `ge`, `zh` -> `cn`, `ja` -> `jp`, `ko` -> `kr`, `vi` -> `vn`, `ms` -> `my`, `ar` -> `sa`, `he` -> `il`, `hi` -> `in`
+    - Never reuse a flag stem as a locale code: `my` is Burmese, not Malay.
+- A stored `'en'` preference predates the `en-gb`/`en-us` split - `LocalStoragePreferencesRepository` migrates it. Keep that branch.
+- When adding a new locale, update: `VALID_LOCALES`, `LOCALES`, the lazy loader in `i18n-context.tsx`, the browser-language map in `locales.ts`, and add a JSON file under `src/modules/shared/i18n/locales/`. Every existing locale file also needs the new language in its `locale` map and the new flag in its `flags` map.
 
 ## Styling
 

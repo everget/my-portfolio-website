@@ -1,0 +1,149 @@
+{
+    "appTitle": "Modelo",
+    "welcome": {
+        "greeting": "Olá, Mundo!",
+        "description": "Um modelo inicial com as seguintes tecnologias:"
+    },
+    "flags": {
+        "gb": "Bandeira do Reino Unido",
+        "us": "Bandeira dos Estados Unidos",
+        "es": "Bandeira de Espanha",
+        "fr": "Bandeira de França",
+        "br": "Bandeira do Brasil",
+        "pt": "Bandeira de Portugal",
+        "ua": "Bandeira da Ucrânia",
+        "ru": "Bandeira da Rússia",
+        "am": "Bandeira da Arménia",
+        "de": "Bandeira da Alemanha",
+        "cn": "Bandeira da China",
+        "jp": "Bandeira do Japão",
+        "tr": "Bandeira da Turquia",
+        "sa": "Bandeira da Arábia Saudita",
+        "il": "Bandeira de Israel",
+        "ge": "Bandeira da Geórgia",
+        "it": "Bandeira de Itália",
+        "pl": "Bandeira da Polónia",
+        "in": "Bandeira da Índia",
+        "nl": "Bandeira dos Países Baixos",
+        "id": "Bandeira da Indonésia",
+        "my": "Bandeira da Malásia",
+        "vn": "Bandeira do Vietname",
+        "kr": "Bandeira da Coreia do Sul",
+        "th": "Bandeira da Tailândia"
+    },
+    "theme": {
+        "switchToLight": "Mudar para o tema claro",
+        "switchToDark": "Mudar para o tema escuro"
+    },
+    "locale": {
+        "en-gb": "Inglês (Reino Unido)",
+        "en-us": "Inglês (Estados Unidos)",
+        "es": "Espanhol",
+        "fr": "Francês",
+        "pt-br": "Português (Brasil)",
+        "pt-pt": "Português (Portugal)",
+        "uk": "Ucraniano",
+        "ru": "Russo",
+        "hy": "Arménio",
+        "de": "Alemão",
+        "zh": "Chinês",
+        "ja": "Japonês",
+        "tr": "Turco",
+        "ar": "Árabe",
+        "he": "Hebraico",
+        "ka": "Georgiano",
+        "it": "Italiano",
+        "pl": "Polaco",
+        "hi": "Hindi",
+        "nl": "Neerlandês",
+        "id": "Indonésio",
+        "ms": "Malaio",
+        "vi": "Vietnamita",
+        "ko": "Coreano",
+        "th": "Tailandês"
+    },
+    "counter": {
+        "label": {
+            "one": "{{count}} clique",
+            "other": "{{count}} cliques"
+        }
+    },
+    "portfolio": {
+        "header": {
+            "title": "O meu portefólio",
+            "toggleTheme": "Alternar tema",
+            "selectLanguage": "Selecionar idioma"
+        },
+        "footer": {
+            "rights": "Todos os direitos reservados.",
+            "madeWithLove": "Feito com ❤️"
+        },
+        "projects": {
+            "title": "Projetos em destaque",
+            "subtitle": "Veja aquilo em que tenho estado a trabalhar ultimamente.",
+            "liveDemo": "Demo ao vivo",
+            "viewCode": "Ver código",
+            "items": {
+                "portfolioWebsite": {
+                    "title": "Website de portefólio (está aqui)",
+                    "description": "Um pouco de recursividade para dar mais sabor à sua experiência de utilizador :)"
+                },
+                "pineScriptCheatsheet": {
+                    "title": "Guia rápido de Pine Script",
+                    "description": "Guia rápido de Pine Script"
+                },
+                "calculator": {
+                    "title": "Calculadora",
+                    "description": "Calculadora com atalhos de teclado"
+                },
+                "todoList": {
+                    "title": "Lista de tarefas avançada",
+                    "description": "Uma aplicação de lista de tarefas com funcionalidades adicionais"
+                },
+                "spaceInvaders": {
+                    "title": "Jogo Space Invaders",
+                    "description": "A minha tarefa de teste para entrar na TradingView (maio de 2017)"
+                },
+                "securitiesPortfolio": {
+                    "title": "Calculadora de carteira de valores mobiliários",
+                    "description": "A minha tarefa de teste para entrar na eSignal (maio de 2016)"
+                },
+                "simpleBookStorage": {
+                    "title": "Armazenamento simples de livros",
+                    "description": "A minha tarefa de teste para entrar na uCoz (março de 2016)"
+                }
+            }
+        },
+        "nav": {
+            "about": "Sobre",
+            "projects": "Projetos",
+            "skills": "Competências",
+            "contact": "Contacto"
+        },
+        "hero": {
+            "greeting": "Olá, sou o Alex",
+            "title": "Programador Web Full Stack",
+            "description": "Crio aplicações web modernas com tecnologias de ponta.",
+            "tagline": "Focado em arquitetura limpa, numa excelente experiência de desenvolvimento e em criar coisas que as pessoas gostam verdadeiramente de usar."
+        },
+        "contact": {
+            "title": "Contacto",
+            "getInTouch": "Entre em contacto"
+        },
+        "skills": {
+            "title": "Competências e tecnologias",
+            "yearAbbr": "a",
+            "categories": {
+                "principles": "Princípios",
+                "methodologies": "Metodologias e práticas",
+                "languages": "Linguagens",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "testing": "Testes",
+                "cicd": "CI/CD",
+                "otherTools": "Outras ferramentas",
+                "dataScience": "Ciência de dados"
+            }
+        }
+    }
+}

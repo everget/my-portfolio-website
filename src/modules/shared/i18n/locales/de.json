@@ -5,10 +5,12 @@
         "description": "Eine Starter-Vorlage mit folgenden Technologien:"
     },
     "flags": {
-        "en": "Flagge des Vereinigten Königreichs",
+        "gb": "Flagge des Vereinigten Königreichs",
+        "us": "Flagge der Vereinigten Staaten",
         "es": "Flagge Spaniens",
         "fr": "Flagge Frankreichs",
         "br": "Flagge Brasiliens",
+        "pt": "Flagge Portugals",
         "ua": "Flagge der Ukraine",
         "ru": "Flagge Russlands",
         "am": "Flagge Armeniens",
@@ -21,17 +23,25 @@
         "ge": "Flagge Georgiens",
         "it": "Flagge Italiens",
         "pl": "Flagge Polens",
-        "in": "Flagge Indiens"
+        "in": "Flagge Indiens",
+        "nl": "Flagge der Niederlande",
+        "id": "Flagge Indonesiens",
+        "my": "Flagge Malaysias",
+        "vn": "Flagge Vietnams",
+        "kr": "Flagge Südkoreas",
+        "th": "Flagge Thailands"
     },
     "theme": {
         "switchToLight": "Zum hellen Design wechseln",
         "switchToDark": "Zum dunklen Design wechseln"
     },
     "locale": {
-        "en": "Englisch",
+        "en-gb": "Englisch (Vereinigtes Königreich)",
+        "en-us": "Englisch (Vereinigte Staaten)",
         "es": "Spanisch",
         "fr": "Französisch",
         "pt-br": "Portugiesisch (Brasilien)",
+        "pt-pt": "Portugiesisch (Portugal)",
         "uk": "Ukrainisch",
         "ru": "Russisch",
         "hy": "Armenisch",
@@ -44,7 +54,13 @@
         "ka": "Georgisch",
         "it": "Italienisch",
         "pl": "Polnisch",
-        "hi": "Hindi"
+        "hi": "Hindi",
+        "nl": "Niederländisch",
+        "id": "Indonesisch",
+        "ms": "Malaiisch",
+        "vi": "Vietnamesisch",
+        "ko": "Koreanisch",
+        "th": "Thailändisch"
     },
     "counter": {
         "label": {

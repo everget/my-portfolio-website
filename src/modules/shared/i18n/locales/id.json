@@ -1,0 +1,146 @@
+{
+    "appTitle": "Templat",
+    "welcome": {
+        "greeting": "Halo, Dunia!",
+        "description": "Templat awal dengan teknologi berikut:"
+    },
+    "flags": {
+        "gb": "Bendera Britania Raya",
+        "us": "Bendera Amerika Serikat",
+        "es": "Bendera Spanyol",
+        "fr": "Bendera Prancis",
+        "br": "Bendera Brasil",
+        "pt": "Bendera Portugal",
+        "ua": "Bendera Ukraina",
+        "ru": "Bendera Rusia",
+        "am": "Bendera Armenia",
+        "de": "Bendera Jerman",
+        "cn": "Bendera Tiongkok",
+        "jp": "Bendera Jepang",
+        "tr": "Bendera Turki",
+        "sa": "Bendera Arab Saudi",
+        "il": "Bendera Israel",
+        "ge": "Bendera Georgia",
+        "it": "Bendera Italia",
+        "pl": "Bendera Polandia",
+        "in": "Bendera India",
+        "nl": "Bendera Belanda",
+        "id": "Bendera Indonesia",
+        "my": "Bendera Malaysia",
+        "vn": "Bendera Vietnam",
+        "kr": "Bendera Korea Selatan",
+        "th": "Bendera Thailand"
+    },
+    "theme": {
+        "switchToLight": "Beralih ke tema terang",
+        "switchToDark": "Beralih ke tema gelap"
+    },
+    "locale": {
+        "en-gb": "Bahasa Inggris (Britania Raya)",
+        "en-us": "Bahasa Inggris (Amerika Serikat)",
+        "es": "Bahasa Spanyol",
+        "fr": "Bahasa Prancis",
+        "pt-br": "Bahasa Portugis (Brasil)",
+        "pt-pt": "Bahasa Portugis (Portugal)",
+        "uk": "Bahasa Ukraina",
+        "ru": "Bahasa Rusia",
+        "hy": "Bahasa Armenia",
+        "de": "Bahasa Jerman",
+        "zh": "Bahasa Tionghoa",
+        "ja": "Bahasa Jepang",
+        "tr": "Bahasa Turki",
+        "ar": "Bahasa Arab",
+        "he": "Bahasa Ibrani",
+        "ka": "Bahasa Georgia",
+        "it": "Bahasa Italia",
+        "pl": "Bahasa Polandia",
+        "hi": "Bahasa Hindi",
+        "nl": "Bahasa Belanda",
+        "id": "Bahasa Indonesia",
+        "ms": "Bahasa Melayu",
+        "vi": "Bahasa Vietnam",
+        "ko": "Bahasa Korea",
+        "th": "Bahasa Thai"
+    },
+    "counter": {
+        "label": "{{count}} klik"
+    },
+    "portfolio": {
+        "header": {
+            "title": "Portofolio Saya",
+            "toggleTheme": "Ganti tema",
+            "selectLanguage": "Pilih bahasa"
+        },
+        "footer": {
+            "rights": "Hak cipta dilindungi undang-undang.",
+            "madeWithLove": "Dibuat dengan ❤️"
+        },
+        "projects": {
+            "title": "Proyek Unggulan",
+            "subtitle": "Lihat apa saja yang saya kerjakan akhir-akhir ini.",
+            "liveDemo": "Demo Langsung",
+            "viewCode": "Lihat Kode",
+            "items": {
+                "portfolioWebsite": {
+                    "title": "Situs Portofolio (Anda di sini)",
+                    "description": "Sedikit rekursi untuk membumbui UX Anda :)"
+                },
+                "pineScriptCheatsheet": {
+                    "title": "Lembar Contekan Pine Script",
+                    "description": "Lembar Contekan Pine Script"
+                },
+                "calculator": {
+                    "title": "Kalkulator",
+                    "description": "Kalkulator dengan pintasan keyboard"
+                },
+                "todoList": {
+                    "title": "Daftar Tugas Lanjutan",
+                    "description": "Aplikasi daftar tugas dengan fitur tambahan"
+                },
+                "spaceInvaders": {
+                    "title": "Game Space Invaders",
+                    "description": "Tugas tes saya untuk bergabung dengan TradingView (Mei 2017)"
+                },
+                "securitiesPortfolio": {
+                    "title": "Kalkulator Portofolio Efek",
+                    "description": "Tugas tes saya untuk bergabung dengan eSignal (Mei 2016)"
+                },
+                "simpleBookStorage": {
+                    "title": "Penyimpanan Buku Sederhana",
+                    "description": "Tugas tes saya untuk bergabung dengan uCoz (Maret 2016)"
+                }
+            }
+        },
+        "nav": {
+            "about": "Tentang",
+            "projects": "Proyek",
+            "skills": "Keahlian",
+            "contact": "Kontak"
+        },
+        "hero": {
+            "greeting": "Hai, saya Alex",
+            "title": "Pengembang Web Full Stack",
+            "description": "Saya membuat aplikasi web modern dengan teknologi mutakhir.",
+            "tagline": "Berfokus pada arsitektur yang bersih, pengalaman pengembang yang luar biasa, dan membangun hal-hal yang benar-benar disukai orang."
+        },
+        "contact": {
+            "title": "Kontak",
+            "getInTouch": "Hubungi saya"
+        },
+        "skills": {
+            "title": "Keahlian & Teknologi",
+            "yearAbbr": "thn",
+            "categories": {
+                "principles": "Prinsip",
+                "methodologies": "Metodologi & Praktik",
+                "languages": "Bahasa",
+                "frontend": "Frontend",
+                "backend": "Backend",
+                "testing": "Pengujian",
+                "cicd": "CI/CD",
+                "otherTools": "Alat Lainnya",
+                "dataScience": "Ilmu Data"
+            }
+        }
+    }
+}

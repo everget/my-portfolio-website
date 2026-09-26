@@ -1,10 +1,10 @@
-import enMessages from './locales/en.json';
+import enMessages from './locales/en-us.json';
 
 // Plural-forms object — must have "other" as the universal fallback.
 // The keys are the LDML plural categories returned by Intl.PluralRules.
 export type PluralForms = { other: string } & Partial<Record<Intl.LDMLPluralRule, string>>;
 
-// en.json is the canonical source for valid translation keys.
+// en-us.json is the canonical source for valid translation keys.
 type EnMessages = typeof enMessages;
 
 // A value is a leaf if it is a plain string OR a plural-forms object (has "other").

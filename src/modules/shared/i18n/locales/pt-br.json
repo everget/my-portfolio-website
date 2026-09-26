@@ -5,10 +5,12 @@
         "description": "Um modelo inicial com as seguintes tecnologias:"
     },
     "flags": {
-        "en": "Bandeira do Reino Unido",
+        "gb": "Bandeira do Reino Unido",
+        "us": "Bandeira dos Estados Unidos",
         "es": "Bandeira da Espanha",
         "fr": "Bandeira da França",
         "br": "Bandeira do Brasil",
+        "pt": "Bandeira de Portugal",
         "ua": "Bandeira da Ucrânia",
         "ru": "Bandeira da Rússia",
         "am": "Bandeira da Armênia",
@@ -21,17 +23,25 @@
         "ge": "Bandeira da Geórgia",
         "it": "Bandeira da Itália",
         "pl": "Bandeira da Polônia",
-        "in": "Bandeira da Índia"
+        "in": "Bandeira da Índia",
+        "nl": "Bandeira dos Países Baixos",
+        "id": "Bandeira da Indonésia",
+        "my": "Bandeira da Malásia",
+        "vn": "Bandeira do Vietnã",
+        "kr": "Bandeira da Coreia do Sul",
+        "th": "Bandeira da Tailândia"
     },
     "theme": {
         "switchToLight": "Mudar para tema claro",
         "switchToDark": "Mudar para tema escuro"
     },
     "locale": {
-        "en": "Inglês",
+        "en-gb": "Inglês (Reino Unido)",
+        "en-us": "Inglês (Estados Unidos)",
         "es": "Espanhol",
         "fr": "Francês",
-        "pt-br": "Português",
+        "pt-br": "Português (Brasil)",
+        "pt-pt": "Português (Portugal)",
         "uk": "Ucraniano",
         "ru": "Russo",
         "hy": "Armênio",
@@ -44,7 +54,13 @@
         "ka": "Georgiano",
         "it": "Italiano",
         "pl": "Polonês",
-        "hi": "Hindi"
+        "hi": "Hindi",
+        "nl": "Holandês",
+        "id": "Indonésio",
+        "ms": "Malaio",
+        "vi": "Vietnamita",
+        "ko": "Coreano",
+        "th": "Tailandês"
     },
     "counter": {
         "label": {

@@ -17,7 +17,7 @@ function renderButton(initialTheme: Theme = 'dark') {
     );
     render(
         <PreferencesProvider>
-            <I18nProvider locale="en">
+            <I18nProvider locale="en-us">
                 <ThemeToggleButton />
             </I18nProvider>
         </PreferencesProvider>,

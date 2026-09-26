@@ -1,0 +1,146 @@
+{
+    "appTitle": "템플릿",
+    "welcome": {
+        "greeting": "안녕하세요, 세계!",
+        "description": "다음 기술로 구성된 스타터 템플릿:"
+    },
+    "flags": {
+        "gb": "영국 국기",
+        "us": "미국 국기",
+        "es": "스페인 국기",
+        "fr": "프랑스 국기",
+        "br": "브라질 국기",
+        "pt": "포르투갈 국기",
+        "ua": "우크라이나 국기",
+        "ru": "러시아 국기",
+        "am": "아르메니아 국기",
+        "de": "독일 국기",
+        "cn": "중국 국기",
+        "jp": "일본 국기",
+        "tr": "튀르키예 국기",
+        "sa": "사우디아라비아 국기",
+        "il": "이스라엘 국기",
+        "ge": "조지아 국기",
+        "it": "이탈리아 국기",
+        "pl": "폴란드 국기",
+        "in": "인도 국기",
+        "nl": "네덜란드 국기",
+        "id": "인도네시아 국기",
+        "my": "말레이시아 국기",
+        "vn": "베트남 국기",
+        "kr": "대한민국 국기",
+        "th": "태국 국기"
+    },
+    "theme": {
+        "switchToLight": "라이트 테마로 전환",
+        "switchToDark": "다크 테마로 전환"
+    },
+    "locale": {
+        "en-gb": "영어(영국)",
+        "en-us": "영어(미국)",
+        "es": "스페인어",
+        "fr": "프랑스어",
+        "pt-br": "포르투갈어(브라질)",
+        "pt-pt": "포르투갈어(포르투갈)",
+        "uk": "우크라이나어",
+        "ru": "러시아어",
+        "hy": "아르메니아어",
+        "de": "독일어",
+        "zh": "중국어",
+        "ja": "일본어",
+        "tr": "튀르키예어",
+        "ar": "아랍어",
+        "he": "히브리어",
+        "ka": "조지아어",
+        "it": "이탈리아어",
+        "pl": "폴란드어",
+        "hi": "힌디어",
+        "nl": "네덜란드어",
+        "id": "인도네시아어",
+        "ms": "말레이어",
+        "vi": "베트남어",
+        "ko": "한국어",
+        "th": "태국어"
+    },
+    "counter": {
+        "label": "클릭 {{count}}회"
+    },
+    "portfolio": {
+        "header": {
+            "title": "내 포트폴리오",
+            "toggleTheme": "테마 전환",
+            "selectLanguage": "언어 선택"
+        },
+        "footer": {
+            "rights": "모든 권리 보유.",
+            "madeWithLove": "❤️을 담아 만들었습니다"
+        },
+        "projects": {
+            "title": "주요 프로젝트",
+            "subtitle": "최근에 작업한 결과물을 확인해 보세요.",
+            "liveDemo": "라이브 데모",
+            "viewCode": "코드 보기",
+            "items": {
+                "portfolioWebsite": {
+                    "title": "포트폴리오 웹사이트 (현재 페이지)",
+                    "description": "UX에 재미를 더하는 약간의 재귀 :)"
+                },
+                "pineScriptCheatsheet": {
+                    "title": "Pine Script 치트 시트",
+                    "description": "Pine Script 치트 시트"
+                },
+                "calculator": {
+                    "title": "계산기",
+                    "description": "키보드 단축키를 지원하는 계산기"
+                },
+                "todoList": {
+                    "title": "고급 할 일 목록",
+                    "description": "추가 기능을 갖춘 할 일 목록 앱"
+                },
+                "spaceInvaders": {
+                    "title": "Space Invaders 게임",
+                    "description": "TradingView 입사 과제 (2017년 5월)"
+                },
+                "securitiesPortfolio": {
+                    "title": "증권 포트폴리오 계산기",
+                    "description": "eSignal 입사 과제 (2016년 5월)"
+                },
+                "simpleBookStorage": {
+                    "title": "간단한 도서 저장소",
+                    "description": "uCoz 입사 과제 (2016년 3월)"
+                }
+            }
+        },
+        "nav": {
+            "about": "소개",
+            "projects": "프로젝트",
+            "skills": "스킬",
+            "contact": "연락처"
+        },
+        "hero": {
+            "greeting": "안녕하세요, 저는 Alex입니다",
+            "title": "풀스택 웹 개발자",
+            "description": "최신 기술로 현대적인 웹 애플리케이션을 만듭니다.",
+            "tagline": "클린 아키텍처, 뛰어난 개발자 경험, 그리고 사람들이 진심으로 즐겨 쓰는 제품을 만드는 데 집중합니다."
+        },
+        "contact": {
+            "title": "연락처",
+            "getInTouch": "연락하기"
+        },
+        "skills": {
+            "title": "스킬 & 기술 스택",
+            "yearAbbr": "년",
+            "categories": {
+                "principles": "원칙",
+                "methodologies": "방법론 & 실천법",
+                "languages": "언어",
+                "frontend": "프론트엔드",
+                "backend": "백엔드",
+                "testing": "테스트",
+                "cicd": "CI/CD",
+                "otherTools": "기타 도구",
+                "dataScience": "데이터 과학"
+            }
+        }
+    }
+}

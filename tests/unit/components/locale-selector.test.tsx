@@ -12,7 +12,7 @@ function renderSelector() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_PREFERENCES));
     render(
         <PreferencesProvider>
-            <I18nProvider locale="en">
+            <I18nProvider locale="en-us">
                 <LocaleSelector />
             </I18nProvider>
         </PreferencesProvider>,
@@ -33,7 +33,7 @@ describe('LocaleSelector', () => {
     it('shows the current locale title on the trigger', () => {
         renderSelector();
         const trigger = screen.getAllByRole('button')[0];
-        expect(trigger.textContent).toContain('English');
+        expect(trigger.textContent).toContain('English (US)');
     });
 
     it('opens the menu on trigger click', () => {
@@ -58,30 +58,38 @@ describe('LocaleSelector', () => {
         expect(screen.queryByRole('menu')).not.toBeInTheDocument();
     });
 
-    it('renders all seventeen locale options when open', () => {
+    it('renders all twenty-five locale options when open', () => {
         renderSelector();
         fireEvent.click(screen.getAllByRole('button')[0]);
 
         const menu = screen.getByRole('menu');
-        expect(within(menu).getAllByRole('menuitem')).toHaveLength(17);
+        expect(within(menu).getAllByRole('menuitem')).toHaveLength(25);
 
         for (const name of [
-            'English',
+            'English (UK)',
+            'English (US)',
             'Español',
             'Français',
             'Deutsch',
-            'Português',
-            'Українська',
+            'Italiano',
+            'Nederlands',
+            'Polski',
+            'Português (Brasil)',
+            'Português (Portugal)',
+            'Türkçe',
+            'Bahasa Indonesia',
+            'Bahasa Melayu',
+            'Tiếng Việt',
             'Русский',
+            'Українська',
             'Հայերեն',
+            'ქართული',
             '中文',
             '日本語',
-            'Türkçe',
+            '한국어',
+            'ไทย',
             'العربية',
             'עברית',
-            'ქართული',
-            'Italiano',
-            'Polski',
             'हिंदी',
         ]) {
             expect(within(menu).getByText(name)).toBeInTheDocument();

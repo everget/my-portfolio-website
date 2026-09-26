@@ -5,10 +5,12 @@
         "description": "Aşağıdaki teknolojileri içeren başlangıç şablonu:"
     },
     "flags": {
-        "en": "Birleşik Krallık Bayrağı",
+        "gb": "Birleşik Krallık Bayrağı",
+        "us": "Amerika Birleşik Devletleri Bayrağı",
         "es": "İspanya Bayrağı",
         "fr": "Fransa Bayrağı",
         "br": "Brezilya Bayrağı",
+        "pt": "Portekiz Bayrağı",
         "ua": "Ukrayna Bayrağı",
         "ru": "Rusya Bayrağı",
         "am": "Ermenistan Bayrağı",
@@ -21,17 +23,25 @@
         "ge": "Gürcistan Bayrağı",
         "it": "İtalya Bayrağı",
         "pl": "Polonya Bayrağı",
-        "in": "Hindistan Bayrağı"
+        "in": "Hindistan Bayrağı",
+        "nl": "Hollanda Bayrağı",
+        "id": "Endonezya Bayrağı",
+        "my": "Malezya Bayrağı",
+        "vn": "Vietnam Bayrağı",
+        "kr": "Güney Kore Bayrağı",
+        "th": "Tayland Bayrağı"
     },
     "theme": {
         "switchToLight": "Açık temaya geç",
         "switchToDark": "Koyu temaya geç"
     },
     "locale": {
-        "en": "İngilizce",
+        "en-gb": "İngilizce (Birleşik Krallık)",
+        "en-us": "İngilizce (ABD)",
         "es": "İspanyolca",
         "fr": "Fransızca",
         "pt-br": "Portekizce (Brezilya)",
+        "pt-pt": "Portekizce (Portekiz)",
         "uk": "Ukraynaca",
         "ru": "Rusça",
         "hy": "Ermenice",
@@ -44,7 +54,13 @@
         "ka": "Gürcüce",
         "it": "İtalyanca",
         "pl": "Lehçe",
-        "hi": "Hintçe"
+        "hi": "Hintçe",
+        "nl": "Felemenkçe",
+        "id": "Endonezce",
+        "ms": "Malayca",
+        "vi": "Vietnamca",
+        "ko": "Korece",
+        "th": "Tayca"
     },
     "counter": {
         "label": "{{count}} tıklama"

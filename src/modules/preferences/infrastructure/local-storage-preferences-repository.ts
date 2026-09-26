@@ -3,7 +3,7 @@ import type {
     PreferencesRepository,
 } from '@/modules/preferences/domain/preferences-repository';
 import { VALID_THEMES, type Theme } from '@/modules/preferences/domain/theme';
-import { VALID_LOCALES, type Locale } from '@/modules/preferences/domain/locale';
+import { DEFAULT_LOCALE, VALID_LOCALES, type Locale } from '@/modules/preferences/domain/locale';
 import { detectSystemTheme } from '@/modules/preferences/infrastructure/detect-system-theme';
 import { detectLocaleFromBrowser } from '@/modules/shared/i18n/locales';
 
@@ -11,8 +11,18 @@ export const STORAGE_KEY = 'vite-react:preferences';
 
 export const DEFAULT_PREFERENCES: Preferences = {
     theme: 'light',
-    locale: 'en',
+    locale: DEFAULT_LOCALE,
 };
+
+function resolveStoredLocale(raw: unknown): Locale {
+    if (typeof raw !== 'string') return DEFAULT_PREFERENCES.locale;
+    if ((VALID_LOCALES as readonly string[]).includes(raw)) return raw as Locale;
+    // 'en' predates the en-gb/en-us split - stay in English, taking the variant from the browser
+    if (raw === 'en') {
+        return detectLocaleFromBrowser(navigator.language) === 'en-gb' ? 'en-gb' : 'en-us';
+    }
+    return DEFAULT_PREFERENCES.locale;
+}
 
 export class LocalStoragePreferencesRepository implements PreferencesRepository {
     load(): Preferences {
@@ -35,13 +45,7 @@ export class LocalStoragePreferencesRepository implements PreferencesRepository 
                     ? (rawTheme as Theme)
                     : DEFAULT_PREFERENCES.theme;
 
-            const locale: Locale =
-                typeof rawLocale === 'string' &&
-                (VALID_LOCALES as readonly string[]).includes(rawLocale)
-                    ? (rawLocale as Locale)
-                    : DEFAULT_PREFERENCES.locale;
-
-            return { theme, locale };
+            return { theme, locale: resolveStoredLocale(rawLocale) };
         } catch {
             return DEFAULT_PREFERENCES;
         }
