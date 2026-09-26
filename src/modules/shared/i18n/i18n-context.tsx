@@ -42,6 +42,9 @@ export function I18nProvider({ children, locale }: { children: ReactNode; locale
 
     useEffect(() => {
         if (locale === 'en-us') {
+            // Deriving this during render would lose the "keep the current catalog
+            // while the next one loads" behavior below, so it stays in the effect.
+            // oxlint-disable-next-line react/set-state-in-effect
             setCatalog(enMessages);
             return;
         }
