@@ -65,8 +65,28 @@ jobs:
 
             - run: pnpm install --frozen-lockfile
 
+            - name: Read installed Playwright version
+              id: playwright-version
+              run: echo "version=$(node -p "require('@playwright/test/package.json').version")" >> "$GITHUB_OUTPUT"
+
+            - name: Cache Playwright browsers
+              id: playwright-cache
+              uses: actions/cache@v5
+              with:
+                  path: ~/.cache/ms-playwright
+                  key: playwright-browsers-${{ runner.os }}-${{ steps.playwright-version.outputs.version }}
+
+            # Only chromium is used (see playwright.config.ts), so only its deps are installed -
+            # fewer apt packages means less exposure to flaky mirror timeouts.
             - name: Install Playwright browsers
-              run: pnpm exec playwright install --with-deps
+              if: steps.playwright-cache.outputs.cache-hit != 'true'
+              run: pnpm exec playwright install --with-deps chromium
+              timeout-minutes: 8
+
+            - name: Install Playwright OS dependencies
+              if: steps.playwright-cache.outputs.cache-hit == 'true'
+              run: pnpm exec playwright install-deps chromium
+              timeout-minutes: 8
 
             - name: Run E2E tests
               run: pnpm run ci:test:e2e
