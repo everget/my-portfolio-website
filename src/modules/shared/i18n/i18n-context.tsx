@@ -1,14 +1,23 @@
-import { createContext, type ReactNode, useContext, useEffect, useMemo, useState } from 'react';
+import {
+    createContext,
+    type ReactNode,
+    use,
+    useContext,
+    useDeferredValue,
+    useEffect,
+    useMemo,
+} from 'react';
 import { createTranslator, type Translator, type TranslationCatalog } from './translator';
 import type { Locale } from '@/modules/preferences/domain/locale';
 import enMessages from './locales/en-us.json';
 
+type LazyLocale = Exclude<Locale, 'en-us'>;
 type TranslationCatalogPromise = Promise<{ default: TranslationCatalog }>;
 
 // en-us.json is statically imported - stays in the main bundle and serves as
 // the initial catalog and fallback for all other locales.
 // The remaining locales use dynamic imports so Vite emits each as a separate chunk.
-const localeLoaders: Record<Exclude<Locale, 'en-us'>, () => TranslationCatalogPromise> = {
+const localeLoaders: Record<LazyLocale, () => TranslationCatalogPromise> = {
     'en-gb': () => import('./locales/en-gb.json') as TranslationCatalogPromise,
     es: () => import('./locales/es.json') as TranslationCatalogPromise,
     fr: () => import('./locales/fr.json') as TranslationCatalogPromise,
@@ -35,39 +44,54 @@ const localeLoaders: Record<Exclude<Locale, 'en-us'>, () => TranslationCatalogPr
     th: () => import('./locales/th.json') as TranslationCatalogPromise,
 };
 
+// One promise per locale, so use() gets the same promise on every render.
+const catalogCache = new Map<LazyLocale, Promise<TranslationCatalog>>();
+const failedLocales = new Set<LazyLocale>();
+
+function loadCatalog(locale: LazyLocale): Promise<TranslationCatalog> {
+    let promise = catalogCache.get(locale);
+    if (!promise) {
+        promise = localeLoaders[locale]().then(
+            (m) => m.default,
+            () => {
+                // A chunk can 404 after a redeploy, or fail on a flaky network.
+                failedLocales.add(locale);
+                return enMessages;
+            },
+        );
+        catalogCache.set(locale, promise);
+    }
+    return promise;
+}
+
+// A failed load stays cached as English while it is requested or shown: reloading it
+// there would suspend every re-render, and a chunk that keeps failing would be fetched
+// again each time. Dropping it afterwards makes re-selecting that locale retry.
+function forgetFailedLoads(keep: readonly Locale[]) {
+    for (const locale of failedLocales) {
+        if (!keep.includes(locale)) {
+            failedLocales.delete(locale);
+            catalogCache.delete(locale);
+        }
+    }
+}
+
 const I18nContext = createContext<Translator | null>(null);
 
 export function I18nProvider({ children, locale }: { children: ReactNode; locale: Locale }) {
-    const [catalog, setCatalog] = useState<TranslationCatalog>(enMessages);
+    // Starts as en-us (first paint is English), then trails `locale`: React renders the
+    // new locale in the background and keeps the current UI while it waits for a catalog.
+    // Only those background renders can suspend, so no Suspense boundary is needed.
+    const shownLocale = useDeferredValue(locale, 'en-us');
+    const catalog = shownLocale === 'en-us' ? enMessages : use(loadCatalog(shownLocale));
 
     useEffect(() => {
-        if (locale === 'en-us') {
-            // Deriving this during render would lose the "keep the current catalog
-            // while the next one loads" behavior below, so it stays in the effect.
-            // oxlint-disable-next-line react/set-state-in-effect
-            setCatalog(enMessages);
-            return;
-        }
-        // Load the locale chunk; keep current catalog until it arrives to avoid
-        // a flash of untranslated content during the fetch.
-        // `stale` guards against a slower earlier locale resolving last.
-        let stale = false;
-        void (async () => {
-            try {
-                const m = await localeLoaders[locale]();
-                if (!stale) setCatalog(m.default);
-            } catch {
-                // A chunk can 404 after a redeploy, or fail on a flaky network.
-                // Fall back to English rather than stranding the UI.
-                if (!stale) setCatalog(enMessages);
-            }
-        })();
-        return () => {
-            stale = true;
-        };
-    }, [locale]);
+        forgetFailedLoads([locale, shownLocale]);
+    }, [locale, shownLocale]);
 
-    const t = useMemo(() => createTranslator(catalog, locale), [catalog, locale]);
+    // A failed load shows English, so it gets English plural rules too.
+    const catalogLocale = catalog === enMessages ? 'en-us' : shownLocale;
+    const t = useMemo(() => createTranslator(catalog, catalogLocale), [catalog, catalogLocale]);
 
     return <I18nContext.Provider value={t}>{children}</I18nContext.Provider>;
 }
